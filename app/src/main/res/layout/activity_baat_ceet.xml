@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".BaatCeetActivity">
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:id="@+id/lin"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_gravity="center"
+            android:id="@+id/backBtn"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/community"
+            app:civ_border_width="1dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:id="@+id/photo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aditya Yadav"
+            android:layout_gravity="center"
+            android:layout_marginStart="7dp"
+            android:textSize="19dp"
+            android:id="@+id/name"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rel"
+        android:layout_below="@+id/lin"
+        android:layout_above="@+id/ll"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rec"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/ll"
+    android:layout_marginBottom="7dp"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_height="60dp">
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="10dp"
+        android:layout_marginStart="6dp"
+        android:inputType="text"
+        android:drawableLeft="@drawable/baseline_add_reaction_24"
+        android:hint="Message"
+        android:drawablePadding="10dp"
+        android:background="@drawable/shape_edt"/>
+    <androidx.cardview.widget.CardView
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/sendBtn"
+        android:layout_marginBottom="5dp"
+        android:layout_width="140dp"
+        app:cardCornerRadius="500dp"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/themeColor"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            android:padding="20dp"
+            app:tint="@color/white" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragment.MainScreenActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chatify"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#30B560"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginStart="10dp"/>
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="30dp"
+            android:src="@drawable/myqrcode"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="150dp"
+            android:layout_marginTop="15dp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:src="@drawable/camera"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="100dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="55dp"/>
+
+
+        <ImageView
+            android:id="@+id/dots"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/dots"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#938E8E"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/myNav"
+            android:layout_alignParentTop="true"
+            app:defaultNavHost="true"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/myNav"
+            app:labelVisibilityMode="unlabeled"
+            app:itemActiveIndicatorStyle="@style/custom_bar"
+            app:menu="@menu/menu"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

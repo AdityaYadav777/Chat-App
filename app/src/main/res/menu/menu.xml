@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="chat"
+        android:icon="@drawable/comment"
+        android:id="@+id/ChatFragment"/>
+    <item android:title="Updates"
+        android:icon="@drawable/updates"
+        android:id="@+id/UpdateFragment"/>
+    <item android:title="Communities"
+        android:icon="@drawable/community"
+        android:id="@+id/CommunitiesFragment"/>
+    <item android:title="Call"
+        android:icon="@drawable/call"
+        android:id="@+id/CalFragment"/>
+</menu>

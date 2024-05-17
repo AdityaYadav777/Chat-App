@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "674737927572",
+    "project_id": "chat-app-9f4f6",
+    "storage_bucket": "chat-app-9f4f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674737927572:android:b77dcd970b7de21eab0b81",
+        "android_client_info": {
+          "package_name": "com.aditya.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAhgwXIAJsRl0GiP70nUwlezZU29lfy_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

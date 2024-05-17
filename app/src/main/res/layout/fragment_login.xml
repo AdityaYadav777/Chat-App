@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.LoginFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#097144"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Your Number"
+   android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Chatify will send an SMS  Message to Verify Your Phone Number.Enter Your Phone Number Correctaly"
+     android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:textSize="18sp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91"
+        android:editable="false"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:ems="10"
+        android:id="@+id/getNumber"
+        android:inputType="number"
+        android:maxLength="10"
+        android:outlineAmbientShadowColor="@color/themeColor"
+
+        android:maxEms="10"
+        android:hint="Enter Your Number"
+        android:paddingStart="10dp"
+        android:searchResultHighlightColor="@color/themeColor"
+        android:focusedSearchResultHighlightColor="@color/themeColor"
+        android:shadowColor="@color/themeColor"
+        android:paddingEnd="10dp"/>
+
+</LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="NEXT"
+        android:background="#07C84E"
+        android:layout_gravity="center"
+        android:id="@+id/btn"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
