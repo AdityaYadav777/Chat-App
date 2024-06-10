@@ -1,6 +1,8 @@
 -> Splash Screen
 ![WhatsApp Image 2024-06-10 at 16 20 00_d552b3e0](https://github.com/AdityaYadav777/Chat-App/assets/97823134/a39709fe-920d-49be-b6da-10353dadbbc7)
-
+<html>
+  
+</html>
 ->Phone Number Auth Screen
 ![WhatsApp Image 2024-06-10 at 16 24 56_10503d4c](https://github.com/AdityaYadav777/Chat-App/assets/97823134/2f55c3fb-f66e-43be-aadb-bb056bc9a296)
 
